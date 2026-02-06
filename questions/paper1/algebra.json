@@ -1,0 +1,204 @@
+{
+  "topic_id": "algebra",
+  "topic_name": "Algebra",
+  "questions": [
+    {
+      "id": "ALG001",
+      "subtopic_id": "equations",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Solve for x: 2x + 5 = 11",
+      "answer": 3,
+      "tolerance": 0.01,
+      "hints": ["Isolate x by subtracting 5 from both sides, then divide by 2"],
+      "explanation": "2x + 5 = 11\n2x = 11 - 5\n2x = 6\nx = 3",
+      "common_mistakes": [
+        {"mistake": "Adding instead of subtracting", "explanation": "Remember to perform the opposite operation to isolate the variable"},
+        {"mistake": "Forgetting to divide by 2", "explanation": "After subtracting, you must divide both sides by the coefficient of x"}
+      ],
+      "nsc_reference": "Basic algebra"
+    },
+    {
+      "id": "ALG002",
+      "subtopic_id": "equations",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Solve for x: x² - 5x + 6 = 0\nEnter your answers separated by commas (smaller value first).",
+      "answer": [2, 3],
+      "tolerance": 0.01,
+      "hints": ["Try factorising the quadratic", "Look for two numbers that multiply to 6 and add to -5"],
+      "explanation": "x² - 5x + 6 = 0\n(x - 2)(x - 3) = 0\nx = 2 or x = 3",
+      "common_mistakes": [
+        {"mistake": "Sign errors in factorisation", "explanation": "Check: (-2) × (-3) = 6 and (-2) + (-3) = -5"},
+        {"mistake": "Only finding one solution", "explanation": "Quadratic equations typically have two solutions"}
+      ],
+      "nsc_reference": "2022 Paper 1 Q1.1"
+    },
+    {
+      "id": "ALG003",
+      "subtopic_id": "equations",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Solve for x: 2x² + 5x - 3 = 0\nEnter your answers separated by commas.",
+      "answer": [-3, 0.5],
+      "tolerance": 0.01,
+      "hints": ["Use the quadratic formula or try factorisation", "a=2, b=5, c=-3"],
+      "explanation": "Using the quadratic formula: x = (-b ± √(b²-4ac)) / 2a\nx = (-5 ± √(25+24)) / 4\nx = (-5 ± 7) / 4\nx = -3 or x = 0.5\n\nOr by factorisation: (2x - 1)(x + 3) = 0",
+      "common_mistakes": [
+        {"mistake": "Calculation error in discriminant", "explanation": "b² - 4ac = 25 - 4(2)(-3) = 25 + 24 = 49"},
+        {"mistake": "Sign error with negative b", "explanation": "Remember: -5 + 7 = 2 and -5 - 7 = -12"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q1.2"
+    },
+    {
+      "id": "ALG004",
+      "subtopic_id": "inequalities",
+      "question_type": "expression",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Solve for x: 2x - 3 < 5\nExpress your answer in the form x < a or x > a.",
+      "answer": "x < 4",
+      "hints": ["Treat it like an equation, but keep the inequality sign"],
+      "explanation": "2x - 3 < 5\n2x < 8\nx < 4",
+      "common_mistakes": [
+        {"mistake": "Flipping inequality when not needed", "explanation": "Only flip the inequality when multiplying or dividing by a negative number"}
+      ],
+      "nsc_reference": "Basic inequalities"
+    },
+    {
+      "id": "ALG005",
+      "subtopic_id": "inequalities",
+      "question_type": "expression",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Solve for x: x² - 4x - 5 ≤ 0\nExpress your answer in interval notation or as a ≤ x ≤ b.",
+      "answer": "-1 ≤ x ≤ 5",
+      "hints": ["First factorise the quadratic", "Find the critical values, then test regions"],
+      "explanation": "x² - 4x - 5 ≤ 0\n(x + 1)(x - 5) ≤ 0\nCritical values: x = -1 and x = 5\nTesting regions:\nx < -1: positive\n-1 < x < 5: negative\nx > 5: positive\nSolution: -1 ≤ x ≤ 5",
+      "common_mistakes": [
+        {"mistake": "Using < instead of ≤", "explanation": "The inequality includes equals, so endpoints are included"},
+        {"mistake": "Getting the wrong region", "explanation": "Test a value in each region, e.g., x=0 gives -5 < 0 ✓"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q1.4"
+    },
+    {
+      "id": "ALG006",
+      "subtopic_id": "exponents",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Simplify: 2³ × 2⁴",
+      "answer": 128,
+      "tolerance": 0.01,
+      "hints": ["When multiplying powers with the same base, add the exponents"],
+      "explanation": "2³ × 2⁴ = 2^(3+4) = 2⁷ = 128",
+      "common_mistakes": [
+        {"mistake": "Multiplying exponents instead of adding", "explanation": "2³ × 2⁴ ≠ 2^12. Remember: aᵐ × aⁿ = a^(m+n)"}
+      ],
+      "nsc_reference": "Laws of exponents"
+    },
+    {
+      "id": "ALG007",
+      "subtopic_id": "exponents",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Simplify: (27)^(2/3)",
+      "answer": 9,
+      "tolerance": 0.01,
+      "hints": ["27 = 3³", "The denominator of the exponent is the root, the numerator is the power"],
+      "explanation": "27^(2/3) = (3³)^(2/3) = 3^(3×2/3) = 3² = 9\n\nAlternatively: 27^(2/3) = (³√27)² = 3² = 9",
+      "common_mistakes": [
+        {"mistake": "Confusing root and power order", "explanation": "a^(m/n) = (ⁿ√a)ᵐ = ⁿ√(aᵐ)"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q1.1"
+    },
+    {
+      "id": "ALG008",
+      "subtopic_id": "exponents",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Solve for x: 3^(2x+1) = 27",
+      "answer": 1,
+      "tolerance": 0.01,
+      "hints": ["Express 27 as a power of 3", "If the bases are equal, the exponents must be equal"],
+      "explanation": "3^(2x+1) = 27\n3^(2x+1) = 3³\n2x + 1 = 3\n2x = 2\nx = 1",
+      "common_mistakes": [
+        {"mistake": "Not converting to same base", "explanation": "Always try to express both sides with the same base"},
+        {"mistake": "Arithmetic error solving the linear equation", "explanation": "Check: 3^(2(1)+1) = 3³ = 27 ✓"}
+      ],
+      "nsc_reference": "Exponential equations"
+    },
+    {
+      "id": "ALG009",
+      "subtopic_id": "logarithms",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 2,
+      "question_text": "Evaluate: log₂(8)",
+      "answer": 3,
+      "tolerance": 0.01,
+      "hints": ["Ask: 2 to what power gives 8?"],
+      "explanation": "log₂(8) = x means 2ˣ = 8\n2³ = 8\nTherefore log₂(8) = 3",
+      "common_mistakes": [
+        {"mistake": "Confusing base and argument", "explanation": "log_base(argument) = exponent"}
+      ],
+      "nsc_reference": "Basic logarithms"
+    },
+    {
+      "id": "ALG010",
+      "subtopic_id": "logarithms",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Solve for x: log₃(x) + log₃(x-2) = 1",
+      "answer": 3,
+      "tolerance": 0.01,
+      "hints": ["Use the product rule: log(a) + log(b) = log(ab)", "Remember to check your answer is valid (argument must be positive)"],
+      "explanation": "log₃(x) + log₃(x-2) = 1\nlog₃(x(x-2)) = 1\nx(x-2) = 3¹\nx² - 2x = 3\nx² - 2x - 3 = 0\n(x-3)(x+1) = 0\nx = 3 or x = -1\n\nCheck: x = -1 is invalid (can't take log of negative)\nTherefore x = 3",
+      "common_mistakes": [
+        {"mistake": "Accepting negative solution", "explanation": "log(negative) is undefined, so x = -1 is rejected"},
+        {"mistake": "Forgetting to check validity", "explanation": "Always verify solutions work in the original equation"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q2"
+    },
+    {
+      "id": "ALG011",
+      "subtopic_id": "equations",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "Solve simultaneously:\ny = x + 1\ny = x² - x - 2\nFind the x-values of the points of intersection. Enter both values separated by a comma.",
+      "answer": [-1, 3],
+      "tolerance": 0.01,
+      "hints": ["Substitute y from the first equation into the second", "You'll get a quadratic equation to solve"],
+      "explanation": "Substitute y = x + 1 into y = x² - x - 2:\nx + 1 = x² - x - 2\n0 = x² - 2x - 3\n0 = (x + 1)(x - 3)\nx = -1 or x = 3",
+      "common_mistakes": [
+        {"mistake": "Only finding one intersection point", "explanation": "A line and parabola can intersect at up to two points"},
+        {"mistake": "Substitution errors", "explanation": "Be careful when rearranging: x + 1 = x² - x - 2 becomes x² - 2x - 3 = 0"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q3"
+    },
+    {
+      "id": "ALG012",
+      "subtopic_id": "equations",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "If 2 is a root of x² + kx - 6 = 0, find the value of k.",
+      "answer": 1,
+      "tolerance": 0.01,
+      "hints": ["If 2 is a root, then substituting x = 2 makes the equation equal to 0"],
+      "explanation": "If x = 2 is a root:\n(2)² + k(2) - 6 = 0\n4 + 2k - 6 = 0\n2k - 2 = 0\n2k = 2\nk = 1",
+      "common_mistakes": [
+        {"mistake": "Substituting incorrectly", "explanation": "Make sure to substitute 2 for every x"},
+        {"mistake": "Arithmetic errors", "explanation": "4 - 6 = -2, so 2k - 2 = 0"}
+      ],
+      "nsc_reference": "Nature of roots"
+    }
+  ]
+}

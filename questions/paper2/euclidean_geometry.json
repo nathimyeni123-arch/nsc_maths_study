@@ -1,0 +1,197 @@
+{
+  "topic_id": "euclidean_geometry",
+  "topic_name": "Euclidean Geometry",
+  "questions": [
+    {
+      "id": "EUC001",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "In a circle, the angle at the centre is 80°. Find the angle at the circumference standing on the same arc.",
+      "answer": 40,
+      "tolerance": 0.01,
+      "hints": ["Angle at centre = 2 × angle at circumference"],
+      "explanation": "Angle at centre = 2 × angle at circumference\n80° = 2 × angle at circumference\nAngle at circumference = 40°",
+      "common_mistakes": [
+        {"mistake": "Doubling instead of halving", "explanation": "Circumference angle is HALF the centre angle"}
+      ],
+      "nsc_reference": "Angle at centre theorem"
+    },
+    {
+      "id": "EUC002",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "AB is a diameter of a circle. Point C is on the circumference. Find angle ACB.",
+      "answer": 90,
+      "tolerance": 0.01,
+      "hints": ["Angle in a semicircle"],
+      "explanation": "Angle in a semicircle = 90°\n\nSince AB is a diameter, ACB is an angle in a semicircle.\nTherefore, ∠ACB = 90°",
+      "common_mistakes": [
+        {"mistake": "Thinking it's 180°", "explanation": "Angle in semicircle is 90°, not 180°"}
+      ],
+      "nsc_reference": "Angle in semicircle"
+    },
+    {
+      "id": "EUC003",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "ABCD is a cyclic quadrilateral. If ∠A = 75°, find ∠C.",
+      "answer": 105,
+      "tolerance": 0.01,
+      "hints": ["Opposite angles of cyclic quad are supplementary"],
+      "explanation": "Opposite angles of a cyclic quadrilateral are supplementary.\n∠A + ∠C = 180°\n75° + ∠C = 180°\n∠C = 105°",
+      "common_mistakes": [
+        {"mistake": "Saying ∠C = 75°", "explanation": "Opposite angles are supplementary, not equal"}
+      ],
+      "nsc_reference": "Cyclic quadrilateral"
+    },
+    {
+      "id": "EUC004",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "A tangent touches a circle at point P. If the radius at P makes an angle of x with a chord PQ, and the tangent makes an angle of 55° with PQ, find x.",
+      "answer": 35,
+      "tolerance": 0.01,
+      "hints": ["Tangent is perpendicular to radius at point of contact", "Angles on a straight line..."],
+      "explanation": "Tangent ⊥ radius at point of contact.\nSo angle between tangent and radius = 90°\n\nIf tangent makes 55° with PQ:\nRadius makes angle with PQ = 90° - 55° = 35°\nTherefore x = 35°",
+      "common_mistakes": [
+        {"mistake": "Thinking tangent-radius angle is 55°", "explanation": "Tangent is always perpendicular to radius"}
+      ],
+      "nsc_reference": "Tangent-radius theorem"
+    },
+    {
+      "id": "EUC005",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Two chords AB and CD intersect inside a circle at point E. If AE = 3, EB = 8, and CE = 4, find ED.",
+      "answer": 6,
+      "tolerance": 0.01,
+      "hints": ["Intersecting chords: AE × EB = CE × ED"],
+      "explanation": "When two chords intersect inside a circle:\nAE × EB = CE × ED\n3 × 8 = 4 × ED\n24 = 4 × ED\nED = 6",
+      "common_mistakes": [
+        {"mistake": "Adding instead of multiplying", "explanation": "The theorem involves products, not sums"}
+      ],
+      "nsc_reference": "Intersecting chords theorem"
+    },
+    {
+      "id": "EUC006",
+      "subtopic_id": "proportionality",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "In triangle ABC, DE is parallel to BC with D on AB and E on AC. If AD = 4, DB = 6, and AE = 5, find EC.",
+      "answer": 7.5,
+      "tolerance": 0.1,
+      "hints": ["Parallel line divides sides proportionally", "AD/DB = AE/EC"],
+      "explanation": "By the proportionality theorem (DE ∥ BC):\nAD/DB = AE/EC\n4/6 = 5/EC\n4 × EC = 6 × 5\nEC = 30/4 = 7.5",
+      "common_mistakes": [
+        {"mistake": "Using wrong ratio", "explanation": "AD/DB = AE/EC, not AD/AB"}
+      ],
+      "nsc_reference": "Proportionality theorem"
+    },
+    {
+      "id": "EUC007",
+      "subtopic_id": "proportionality",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Triangles ABC and DEF are similar with AB/DE = 3/2. If the area of ABC is 36 cm², find the area of DEF.",
+      "answer": 16,
+      "tolerance": 0.1,
+      "hints": ["For similar figures, area ratio = (length ratio)²"],
+      "explanation": "For similar triangles:\nArea ratio = (length ratio)²\n\nArea ABC/Area DEF = (AB/DE)²\n36/Area DEF = (3/2)²\n36/Area DEF = 9/4\nArea DEF = 36 × 4/9 = 16 cm²",
+      "common_mistakes": [
+        {"mistake": "Using length ratio directly", "explanation": "Area ratio is the SQUARE of length ratio"}
+      ],
+      "nsc_reference": "Similar triangles - areas"
+    },
+    {
+      "id": "EUC008",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "PT is a tangent to a circle at T. PAB is a secant with A and B on the circle. If PT = 6 and PA = 4, find PB.",
+      "answer": 9,
+      "tolerance": 0.01,
+      "hints": ["Tangent-secant theorem: PT² = PA × PB"],
+      "explanation": "Tangent-secant theorem:\nPT² = PA × PB\n6² = 4 × PB\n36 = 4 × PB\nPB = 9",
+      "common_mistakes": [
+        {"mistake": "Not squaring PT", "explanation": "Formula is PT² = PA × PB"}
+      ],
+      "nsc_reference": "Tangent-secant theorem"
+    },
+    {
+      "id": "EUC009",
+      "subtopic_id": "proofs",
+      "question_type": "multiple_choice",
+      "difficulty": 2,
+      "marks": 2,
+      "question_text": "Equal chords in a circle are:",
+      "answer": "B",
+      "options": ["Parallel to each other", "Equidistant from the centre", "Perpendicular to each other", "Tangent to each other"],
+      "hints": ["Think about the relationship between chord length and distance from centre"],
+      "explanation": "Equal chords in a circle are equidistant from the centre.\n\nThis is because the perpendicular distance from centre to chord depends only on the chord length (for a given radius).",
+      "common_mistakes": [
+        {"mistake": "Thinking equal chords are parallel", "explanation": "Equal chords can be at any angle to each other"}
+      ],
+      "nsc_reference": "Equal chords theorem"
+    },
+    {
+      "id": "EUC010",
+      "subtopic_id": "circle_theorems",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Angles in the same segment subtended by chord AB are equal. If one angle is (2x + 10)° and another is (3x - 5)°, find x.",
+      "answer": 15,
+      "tolerance": 0.01,
+      "hints": ["Angles in same segment are equal", "Set the two expressions equal"],
+      "explanation": "Angles in the same segment are equal:\n2x + 10 = 3x - 5\n10 + 5 = 3x - 2x\n15 = x",
+      "common_mistakes": [
+        {"mistake": "Adding instead of equating", "explanation": "Same segment angles are equal, so set them equal"}
+      ],
+      "nsc_reference": "Angles in same segment"
+    },
+    {
+      "id": "EUC011",
+      "subtopic_id": "proportionality",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "In triangle PQR, X is on PQ and Y is on PR such that XY ∥ QR. If PX:XQ = 2:3 and PY = 8, find YR.",
+      "answer": 12,
+      "tolerance": 0.1,
+      "hints": ["PX/XQ = PY/YR by proportionality theorem"],
+      "explanation": "Since XY ∥ QR:\nPX/XQ = PY/YR\n2/3 = 8/YR\n2 × YR = 3 × 8\nYR = 24/2 = 12",
+      "common_mistakes": [
+        {"mistake": "Using PX/PQ instead of PX/XQ", "explanation": "The theorem uses the ratio of segments, not whole side"}
+      ],
+      "nsc_reference": "2021 Paper 2 Q9"
+    },
+    {
+      "id": "EUC012",
+      "subtopic_id": "proofs",
+      "question_type": "proof",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "State the key reasons needed to prove that the angle subtended by a chord at the centre is twice the angle at the circumference. List key terms separated by commas.",
+      "answer": "isosceles triangle, exterior angle, base angles",
+      "hints": ["Draw radius to point on circumference", "Look for isosceles triangles"],
+      "explanation": "Key steps in proof:\n1. Draw radii to create isosceles triangles (radii equal)\n2. Base angles of isosceles triangle are equal\n3. Exterior angle of triangle = sum of opposite interior angles\n4. This leads to: angle at centre = 2 × angle at circumference",
+      "common_mistakes": [
+        {"mistake": "Not identifying isosceles triangles", "explanation": "Radii are equal, creating isosceles triangles"}
+      ],
+      "nsc_reference": "Proof - angle at centre"
+    }
+  ]
+}

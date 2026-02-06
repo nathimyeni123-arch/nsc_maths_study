@@ -1,0 +1,210 @@
+{
+  "topic_id": "patterns_sequences",
+  "topic_name": "Patterns & Sequences",
+  "questions": [
+    {
+      "id": "SEQ001",
+      "subtopic_id": "arithmetic",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the 10th term of the arithmetic sequence: 3, 7, 11, 15, ...",
+      "answer": 39,
+      "tolerance": 0.01,
+      "hints": ["First find the common difference d", "Use Tₙ = a + (n-1)d"],
+      "explanation": "a = 3 (first term)\nd = 7 - 3 = 4 (common difference)\nT₁₀ = a + (n-1)d\nT₁₀ = 3 + (10-1)(4)\nT₁₀ = 3 + 36\nT₁₀ = 39",
+      "common_mistakes": [
+        {"mistake": "Using n instead of (n-1)", "explanation": "The formula is Tₙ = a + (n-1)d, not Tₙ = a + nd"},
+        {"mistake": "Wrong common difference", "explanation": "d = second term - first term = 7 - 3 = 4"}
+      ],
+      "nsc_reference": "Arithmetic sequences"
+    },
+    {
+      "id": "SEQ002",
+      "subtopic_id": "arithmetic",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "The 3rd term of an arithmetic sequence is 8 and the 7th term is 24. Find the first term.",
+      "answer": 0,
+      "tolerance": 0.01,
+      "hints": ["Set up two equations using Tₙ = a + (n-1)d", "Solve simultaneously for a and d"],
+      "explanation": "T₃ = a + 2d = 8  ...(1)\nT₇ = a + 6d = 24  ...(2)\n\n(2) - (1): 4d = 16\nd = 4\n\nSubstitute in (1): a + 8 = 8\na = 0",
+      "common_mistakes": [
+        {"mistake": "Using wrong values for n", "explanation": "T₃ means n=3, so we use (3-1)=2 in the formula"},
+        {"mistake": "Subtraction error", "explanation": "6d - 2d = 4d, and 24 - 8 = 16"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q4"
+    },
+    {
+      "id": "SEQ003",
+      "subtopic_id": "arithmetic",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Find the sum of the first 20 terms of the arithmetic sequence: 5, 8, 11, 14, ...",
+      "answer": 670,
+      "tolerance": 0.01,
+      "hints": ["Use Sₙ = n/2(2a + (n-1)d) or Sₙ = n/2(a + l)", "a=5, d=3, n=20"],
+      "explanation": "a = 5, d = 3, n = 20\n\nUsing Sₙ = n/2(2a + (n-1)d):\nS₂₀ = 20/2(2(5) + (20-1)(3))\nS₂₀ = 10(10 + 57)\nS₂₀ = 10(67)\nS₂₀ = 670",
+      "common_mistakes": [
+        {"mistake": "Using wrong sum formula", "explanation": "For arithmetic sequences: Sₙ = n/2(2a + (n-1)d)"},
+        {"mistake": "Calculation error", "explanation": "2(5) = 10, (19)(3) = 57, 10 + 57 = 67"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q4.2"
+    },
+    {
+      "id": "SEQ004",
+      "subtopic_id": "geometric",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the 5th term of the geometric sequence: 2, 6, 18, 54, ...",
+      "answer": 162,
+      "tolerance": 0.01,
+      "hints": ["Find the common ratio r", "Use Tₙ = ar^(n-1)"],
+      "explanation": "a = 2 (first term)\nr = 6/2 = 3 (common ratio)\n\nT₅ = ar^(n-1)\nT₅ = 2 × 3^(5-1)\nT₅ = 2 × 3⁴\nT₅ = 2 × 81\nT₅ = 162",
+      "common_mistakes": [
+        {"mistake": "Using n instead of (n-1) in exponent", "explanation": "Tₙ = ar^(n-1), so T₅ uses 3⁴, not 3⁵"},
+        {"mistake": "Multiplying r values instead of using power", "explanation": "3⁴ = 81, not 3×4 = 12"}
+      ],
+      "nsc_reference": "Geometric sequences"
+    },
+    {
+      "id": "SEQ005",
+      "subtopic_id": "geometric",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "The 2nd term of a geometric sequence is 12 and the 5th term is 324. Find the common ratio.",
+      "answer": 3,
+      "tolerance": 0.01,
+      "hints": ["T₂ = ar and T₅ = ar⁴", "Divide T₅ by T₂ to eliminate a"],
+      "explanation": "T₂ = ar = 12\nT₅ = ar⁴ = 324\n\nDividing: ar⁴/ar = 324/12\nr³ = 27\nr = 3",
+      "common_mistakes": [
+        {"mistake": "Wrong exponents", "explanation": "T₂ = ar^(2-1) = ar, T₅ = ar^(5-1) = ar⁴"},
+        {"mistake": "Cube root error", "explanation": "³√27 = 3 because 3³ = 27"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q4"
+    },
+    {
+      "id": "SEQ006",
+      "subtopic_id": "geometric",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Find the sum of the first 6 terms of the geometric sequence: 4, 12, 36, ...",
+      "answer": 1456,
+      "tolerance": 0.01,
+      "hints": ["Use Sₙ = a(rⁿ - 1)/(r - 1) for r > 1", "a = 4, r = 3, n = 6"],
+      "explanation": "a = 4, r = 3, n = 6\n\nSₙ = a(rⁿ - 1)/(r - 1)\nS₆ = 4(3⁶ - 1)/(3 - 1)\nS₆ = 4(729 - 1)/2\nS₆ = 4(728)/2\nS₆ = 4 × 364\nS₆ = 1456",
+      "common_mistakes": [
+        {"mistake": "Using wrong sum formula", "explanation": "For |r| > 1, use Sₙ = a(rⁿ - 1)/(r - 1)"},
+        {"mistake": "Calculation of 3⁶", "explanation": "3⁶ = 729"}
+      ],
+      "nsc_reference": "Geometric series sum"
+    },
+    {
+      "id": "SEQ007",
+      "subtopic_id": "sigma",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Evaluate: Σ(k=1 to 5) (2k + 1)",
+      "answer": 35,
+      "tolerance": 0.01,
+      "hints": ["Substitute k = 1, 2, 3, 4, 5 and add", "Or use sum formulas"],
+      "explanation": "Σ(k=1 to 5) (2k + 1)\n= (2(1)+1) + (2(2)+1) + (2(3)+1) + (2(4)+1) + (2(5)+1)\n= 3 + 5 + 7 + 9 + 11\n= 35\n\nAlternatively: This is an arithmetic series with a=3, d=2, n=5\nS₅ = 5/2(3 + 11) = 5/2(14) = 35",
+      "common_mistakes": [
+        {"mistake": "Wrong limits", "explanation": "k goes from 1 to 5, so 5 terms"},
+        {"mistake": "Arithmetic error in sum", "explanation": "3+5+7+9+11 = 35"}
+      ],
+      "nsc_reference": "Sigma notation"
+    },
+    {
+      "id": "SEQ008",
+      "subtopic_id": "sigma",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Express in sigma notation and evaluate: 2 + 4 + 8 + 16 + 32 + 64",
+      "answer": 126,
+      "tolerance": 0.01,
+      "hints": ["This is a geometric series", "First term = 2, ratio = 2, 6 terms"],
+      "explanation": "This is Σ(k=1 to 6) 2^k or Σ(k=0 to 5) 2^(k+1)\n\nUsing geometric sum formula:\na = 2, r = 2, n = 6\nS₆ = 2(2⁶ - 1)/(2 - 1)\nS₆ = 2(64 - 1)/1\nS₆ = 2(63)\nS₆ = 126",
+      "common_mistakes": [
+        {"mistake": "Misidentifying the pattern", "explanation": "Each term is 2 times the previous: geometric with r = 2"},
+        {"mistake": "Wrong number of terms", "explanation": "Count carefully: 2, 4, 8, 16, 32, 64 = 6 terms"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q5"
+    },
+    {
+      "id": "SEQ009",
+      "subtopic_id": "convergence",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find the sum to infinity: 8 + 4 + 2 + 1 + ...",
+      "answer": 16,
+      "tolerance": 0.01,
+      "hints": ["This converges because |r| < 1", "Use S∞ = a/(1-r)"],
+      "explanation": "a = 8, r = 4/8 = 1/2\n\nSince |r| = 1/2 < 1, the series converges.\n\nS∞ = a/(1-r)\nS∞ = 8/(1 - 1/2)\nS∞ = 8/(1/2)\nS∞ = 16",
+      "common_mistakes": [
+        {"mistake": "Using wrong formula", "explanation": "Sum to infinity uses S∞ = a/(1-r), not the finite sum formula"},
+        {"mistake": "Not checking convergence", "explanation": "Series only converges if |r| < 1"}
+      ],
+      "nsc_reference": "Convergent series"
+    },
+    {
+      "id": "SEQ010",
+      "subtopic_id": "convergence",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "For what values of x will the series 1 + (x-2) + (x-2)² + ... converge? Give the lower bound of x.",
+      "answer": 1,
+      "tolerance": 0.01,
+      "hints": ["For convergence, |r| < 1", "Here r = (x-2)"],
+      "explanation": "For convergence: |r| < 1\n|x - 2| < 1\n-1 < x - 2 < 1\n1 < x < 3\n\nThe lower bound is x = 1 (exclusive)",
+      "common_mistakes": [
+        {"mistake": "Including the boundary", "explanation": "At x = 1, r = -1, so |r| = 1, not < 1"},
+        {"mistake": "Solving inequality incorrectly", "explanation": "|x-2| < 1 means -1 < x-2 < 1, add 2 to all parts"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q5"
+    },
+    {
+      "id": "SEQ011",
+      "subtopic_id": "arithmetic",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "How many terms of the arithmetic sequence 3, 7, 11, 15, ... must be added to give a sum of 820?",
+      "answer": 20,
+      "tolerance": 0.01,
+      "hints": ["Use Sₙ = n/2(2a + (n-1)d)", "Set up and solve a quadratic in n"],
+      "explanation": "a = 3, d = 4, Sₙ = 820\n\nSₙ = n/2(2a + (n-1)d)\n820 = n/2(6 + 4(n-1))\n820 = n/2(6 + 4n - 4)\n820 = n/2(4n + 2)\n820 = n(2n + 1)\n820 = 2n² + n\n2n² + n - 820 = 0\n\nUsing quadratic formula or factoring:\n(2n + 41)(n - 20) = 0\nn = 20 or n = -20.5\n\nSince n must be positive: n = 20",
+      "common_mistakes": [
+        {"mistake": "Arithmetic errors in setup", "explanation": "Carefully expand and simplify the sum formula"},
+        {"mistake": "Accepting negative solution", "explanation": "Number of terms must be a positive integer"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q4.3"
+    },
+    {
+      "id": "SEQ012",
+      "subtopic_id": "geometric",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "The sum to infinity of a geometric series is 12 and the first term is 8. Find the common ratio.",
+      "answer": 0.333,
+      "tolerance": 0.01,
+      "hints": ["Use S∞ = a/(1-r)", "Substitute and solve for r"],
+      "explanation": "S∞ = a/(1-r)\n12 = 8/(1-r)\n12(1-r) = 8\n12 - 12r = 8\n-12r = -4\nr = 1/3 ≈ 0.333",
+      "common_mistakes": [
+        {"mistake": "Rearranging incorrectly", "explanation": "Multiply both sides by (1-r) first: 12(1-r) = 8"},
+        {"mistake": "Sign error", "explanation": "12 - 12r = 8, so -12r = 8 - 12 = -4"}
+      ],
+      "nsc_reference": "Sum to infinity"
+    }
+  ]
+}

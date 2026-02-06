@@ -1,0 +1,198 @@
+{
+  "topic_id": "differential_calculus",
+  "topic_name": "Differential Calculus",
+  "questions": [
+    {
+      "id": "CAL001",
+      "subtopic_id": "differentiation_rules",
+      "question_type": "expression",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find dy/dx if y = 3x⁴",
+      "answer": "12x³",
+      "hints": ["Use the power rule: d/dx(xⁿ) = nxⁿ⁻¹"],
+      "explanation": "y = 3x⁴\ndy/dx = 3 × 4x³ = 12x³",
+      "common_mistakes": [
+        {"mistake": "Forgetting to multiply by coefficient", "explanation": "The 3 stays: 3 × 4 = 12"}
+      ],
+      "nsc_reference": "Power rule"
+    },
+    {
+      "id": "CAL002",
+      "subtopic_id": "differentiation_rules",
+      "question_type": "expression",
+      "difficulty": 1,
+      "marks": 3,
+      "question_text": "Find f'(x) if f(x) = 2x³ - 5x² + 3x - 7",
+      "answer": "6x² - 10x + 3",
+      "hints": ["Differentiate each term separately", "Constant terms differentiate to 0"],
+      "explanation": "f(x) = 2x³ - 5x² + 3x - 7\nf'(x) = 2(3x²) - 5(2x) + 3(1) - 0\nf'(x) = 6x² - 10x + 3",
+      "common_mistakes": [
+        {"mistake": "Forgetting the constant term becomes 0", "explanation": "d/dx(-7) = 0"},
+        {"mistake": "Errors with negative coefficients", "explanation": "-5 × 2 = -10"}
+      ],
+      "nsc_reference": "Basic differentiation"
+    },
+    {
+      "id": "CAL003",
+      "subtopic_id": "differentiation_rules",
+      "question_type": "expression",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find dy/dx if y = 4/x² (rewrite as 4x⁻² first)",
+      "answer": "-8x⁻³",
+      "hints": ["Rewrite as y = 4x⁻²", "Apply power rule"],
+      "explanation": "y = 4/x² = 4x⁻²\ndy/dx = 4(-2)x⁻³\ndy/dx = -8x⁻³ or -8/x³",
+      "common_mistakes": [
+        {"mistake": "Sign error with negative exponent", "explanation": "-2 × 4 = -8, exponent becomes -3"}
+      ],
+      "nsc_reference": "2020 Paper 1"
+    },
+    {
+      "id": "CAL004",
+      "subtopic_id": "first_principles",
+      "question_type": "expression",
+      "difficulty": 2,
+      "marks": 5,
+      "question_text": "Use first principles to find f'(x) if f(x) = x² + 2x. Give your final answer.",
+      "answer": "2x + 2",
+      "hints": ["f'(x) = lim(h→0) [f(x+h) - f(x)]/h", "Expand f(x+h) carefully"],
+      "explanation": "f(x) = x² + 2x\nf(x+h) = (x+h)² + 2(x+h) = x² + 2xh + h² + 2x + 2h\n\nf'(x) = lim(h→0) [f(x+h) - f(x)]/h\n= lim(h→0) [(x² + 2xh + h² + 2x + 2h) - (x² + 2x)]/h\n= lim(h→0) [2xh + h² + 2h]/h\n= lim(h→0) [h(2x + h + 2)]/h\n= lim(h→0) (2x + h + 2)\n= 2x + 2",
+      "common_mistakes": [
+        {"mistake": "Expansion error", "explanation": "(x+h)² = x² + 2xh + h², not x² + h²"},
+        {"mistake": "Not factoring out h", "explanation": "Must factor h to cancel with denominator"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q8"
+    },
+    {
+      "id": "CAL005",
+      "subtopic_id": "tangent_normal",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Find the gradient of the tangent to y = x³ - 3x at the point where x = 2.",
+      "answer": 9,
+      "tolerance": 0.01,
+      "hints": ["Find dy/dx first", "Substitute x = 2"],
+      "explanation": "y = x³ - 3x\ndy/dx = 3x² - 3\n\nAt x = 2:\nGradient = 3(2)² - 3 = 12 - 3 = 9",
+      "common_mistakes": [
+        {"mistake": "Substituting into y instead of dy/dx", "explanation": "Gradient requires the derivative, not the function"}
+      ],
+      "nsc_reference": "Tangent gradient"
+    },
+    {
+      "id": "CAL006",
+      "subtopic_id": "tangent_normal",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "Find the equation of the tangent to y = x² - 4x + 3 at x = 1. Give the y-intercept of this tangent.",
+      "answer": 2,
+      "tolerance": 0.01,
+      "hints": ["Find gradient using dy/dx at x=1", "Find y-value at x=1", "Use y - y₁ = m(x - x₁)"],
+      "explanation": "y = x² - 4x + 3\ndy/dx = 2x - 4\n\nAt x = 1:\nm = 2(1) - 4 = -2\ny = 1 - 4 + 3 = 0\nPoint: (1, 0)\n\nTangent: y - 0 = -2(x - 1)\ny = -2x + 2\n\nY-intercept = 2",
+      "common_mistakes": [
+        {"mistake": "Using wrong point", "explanation": "Must use point on the curve, not just x = 1"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q9"
+    },
+    {
+      "id": "CAL007",
+      "subtopic_id": "curve_sketching",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Find the x-coordinate of the turning point of f(x) = x³ - 6x² + 9x + 2 where x > 1.",
+      "answer": 3,
+      "tolerance": 0.01,
+      "hints": ["Set f'(x) = 0 to find turning points", "Solve the resulting quadratic"],
+      "explanation": "f(x) = x³ - 6x² + 9x + 2\nf'(x) = 3x² - 12x + 9\n\nSet f'(x) = 0:\n3x² - 12x + 9 = 0\nx² - 4x + 3 = 0\n(x - 1)(x - 3) = 0\nx = 1 or x = 3\n\nSince x > 1, x = 3",
+      "common_mistakes": [
+        {"mistake": "Forgetting to divide by 3", "explanation": "Factor out 3 first: 3(x² - 4x + 3) = 0"},
+        {"mistake": "Giving both answers", "explanation": "Question specifies x > 1"}
+      ],
+      "nsc_reference": "Turning points"
+    },
+    {
+      "id": "CAL008",
+      "subtopic_id": "curve_sketching",
+      "question_type": "multiple_choice",
+      "difficulty": 2,
+      "marks": 2,
+      "question_text": "The function f(x) = -x³ + 3x has turning points at x = -1 and x = 1. At x = 1, the turning point is a:",
+      "answer": "A",
+      "options": ["Maximum", "Minimum", "Point of inflection", "Cannot determine"],
+      "hints": ["Check f''(x) at x = 1", "Or check f(x) values around x = 1"],
+      "explanation": "f(x) = -x³ + 3x\nf'(x) = -3x² + 3\nf''(x) = -6x\n\nAt x = 1: f''(1) = -6 < 0\n\nSince f''(1) < 0, this is a maximum.",
+      "common_mistakes": [
+        {"mistake": "Confusing signs", "explanation": "f''(x) < 0 means concave down = maximum"}
+      ],
+      "nsc_reference": "Second derivative test"
+    },
+    {
+      "id": "CAL009",
+      "subtopic_id": "optimization",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 6,
+      "question_text": "A rectangle has perimeter 20 cm. Find the maximum area. Give the maximum area in cm².",
+      "answer": 25,
+      "tolerance": 0.01,
+      "hints": ["Let length = x, express width in terms of x", "A = length × width, then find dA/dx = 0"],
+      "explanation": "Let length = x cm\nPerimeter: 2x + 2w = 20\nw = 10 - x\n\nArea: A = x(10 - x) = 10x - x²\n\ndA/dx = 10 - 2x\n\nSet dA/dx = 0:\n10 - 2x = 0\nx = 5\n\nWidth: w = 10 - 5 = 5\nMaximum area = 5 × 5 = 25 cm²\n\n(Check: d²A/dx² = -2 < 0, confirms maximum)",
+      "common_mistakes": [
+        {"mistake": "Not using constraint", "explanation": "Must express one variable in terms of other using perimeter"},
+        {"mistake": "Forgetting to verify it's a maximum", "explanation": "Use second derivative test"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q10"
+    },
+    {
+      "id": "CAL010",
+      "subtopic_id": "rates_of_change",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "A particle moves so that its displacement s (in metres) at time t seconds is s = t³ - 6t² + 9t. Find the velocity when t = 2.",
+      "answer": -3,
+      "tolerance": 0.01,
+      "hints": ["Velocity = ds/dt", "Differentiate and substitute t = 2"],
+      "explanation": "s = t³ - 6t² + 9t\nv = ds/dt = 3t² - 12t + 9\n\nAt t = 2:\nv = 3(4) - 12(2) + 9\nv = 12 - 24 + 9\nv = -3 m/s",
+      "common_mistakes": [
+        {"mistake": "Using s instead of v", "explanation": "Velocity is the derivative of displacement"}
+      ],
+      "nsc_reference": "Kinematics"
+    },
+    {
+      "id": "CAL011",
+      "subtopic_id": "rates_of_change",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Using the same particle from the previous question (s = t³ - 6t² + 9t), at what time(s) is the particle at rest? Give the smaller value.",
+      "answer": 1,
+      "tolerance": 0.01,
+      "hints": ["At rest means velocity = 0", "Solve v = 0"],
+      "explanation": "v = 3t² - 12t + 9 = 0\n\nDivide by 3:\nt² - 4t + 3 = 0\n(t - 1)(t - 3) = 0\nt = 1 or t = 3\n\nSmaller value: t = 1 second",
+      "common_mistakes": [
+        {"mistake": "Setting s = 0 instead of v = 0", "explanation": "At rest means velocity = 0, not displacement"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q9"
+    },
+    {
+      "id": "CAL012",
+      "subtopic_id": "optimization",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 6,
+      "question_text": "The sum of two positive numbers is 10. Find the minimum value of the sum of their squares.",
+      "answer": 50,
+      "tolerance": 0.01,
+      "hints": ["Let the numbers be x and (10-x)", "Minimize S = x² + (10-x)²"],
+      "explanation": "Let numbers be x and (10-x)\nS = x² + (10-x)²\nS = x² + 100 - 20x + x²\nS = 2x² - 20x + 100\n\ndS/dx = 4x - 20\n\nSet dS/dx = 0:\n4x - 20 = 0\nx = 5\n\nOther number = 10 - 5 = 5\nMinimum S = 5² + 5² = 25 + 25 = 50\n\n(Check: d²S/dx² = 4 > 0, confirms minimum)",
+      "common_mistakes": [
+        {"mistake": "Maximizing instead of minimizing", "explanation": "Question asks for minimum; check second derivative is positive"}
+      ],
+      "nsc_reference": "Optimization"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "topic_id": "functions_graphs",
+  "topic_name": "Functions & Graphs",
+  "questions": [
+    {
+      "id": "FUN001",
+      "subtopic_id": "parabola",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the y-coordinate of the turning point of y = (x - 3)² + 5",
+      "answer": 5,
+      "tolerance": 0.01,
+      "hints": ["The equation is in turning point form y = a(x-p)² + q", "The turning point is (p, q)"],
+      "explanation": "y = (x - 3)² + 5 is in the form y = a(x-p)² + q\nHere p = 3 and q = 5\nTurning point is (3, 5)\nThe y-coordinate is 5",
+      "common_mistakes": [
+        {"mistake": "Giving x-coordinate instead", "explanation": "Question asks for y-coordinate, which is q = 5"},
+        {"mistake": "Confusing signs", "explanation": "In (x-3)², p = 3, not -3"}
+      ],
+      "nsc_reference": "Parabola turning point form"
+    },
+    {
+      "id": "FUN002",
+      "subtopic_id": "parabola",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find the x-coordinate of the turning point of y = 2x² - 8x + 3",
+      "answer": 2,
+      "tolerance": 0.01,
+      "hints": ["Use x = -b/(2a) for a parabola in standard form", "Or complete the square"],
+      "explanation": "Method 1: x = -b/(2a)\nFor y = 2x² - 8x + 3: a = 2, b = -8\nx = -(-8)/(2×2) = 8/4 = 2\n\nMethod 2: Complete the square\ny = 2(x² - 4x) + 3\ny = 2(x² - 4x + 4 - 4) + 3\ny = 2(x - 2)² - 8 + 3\ny = 2(x - 2)² - 5\nTurning point at x = 2",
+      "common_mistakes": [
+        {"mistake": "Forgetting the negative in formula", "explanation": "x = -b/(2a), not b/(2a)"},
+        {"mistake": "Error in completing the square", "explanation": "Half of -4 is -2, squared is 4"}
+      ],
+      "nsc_reference": "2020 Paper 1"
+    },
+    {
+      "id": "FUN003",
+      "subtopic_id": "parabola",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "The parabola y = ax² + bx + c has turning point (2, -3) and passes through (0, 5). Find the value of a.",
+      "answer": 2,
+      "tolerance": 0.01,
+      "hints": ["Use turning point form: y = a(x-p)² + q", "Substitute the point (0,5) to find a"],
+      "explanation": "Turning point form: y = a(x - 2)² - 3\n\nSubstitute (0, 5):\n5 = a(0 - 2)² - 3\n5 = 4a - 3\n8 = 4a\na = 2",
+      "common_mistakes": [
+        {"mistake": "Using wrong form", "explanation": "Turning point form y = a(x-p)² + q is easier here"},
+        {"mistake": "Substitution error", "explanation": "(0-2)² = 4, not -4"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q5"
+    },
+    {
+      "id": "FUN004",
+      "subtopic_id": "hyperbola",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the horizontal asymptote of y = 3/(x-2) + 4",
+      "answer": 4,
+      "tolerance": 0.01,
+      "hints": ["For y = a/(x-p) + q, the horizontal asymptote is y = q"],
+      "explanation": "y = 3/(x-2) + 4 is in the form y = a/(x-p) + q\nHere q = 4\nHorizontal asymptote: y = 4",
+      "common_mistakes": [
+        {"mistake": "Giving vertical asymptote", "explanation": "Horizontal asymptote is y = q, vertical is x = p"}
+      ],
+      "nsc_reference": "Hyperbola asymptotes"
+    },
+    {
+      "id": "FUN005",
+      "subtopic_id": "hyperbola",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "The hyperbola y = a/(x-1) + 2 passes through (3, 5). Find the value of a.",
+      "answer": 6,
+      "tolerance": 0.01,
+      "hints": ["Substitute the point (3, 5) into the equation"],
+      "explanation": "Substitute (3, 5):\n5 = a/(3-1) + 2\n5 = a/2 + 2\n3 = a/2\na = 6",
+      "common_mistakes": [
+        {"mistake": "Arithmetic error", "explanation": "5 - 2 = 3, then 3 × 2 = 6"}
+      ],
+      "nsc_reference": "Hyperbola equation"
+    },
+    {
+      "id": "FUN006",
+      "subtopic_id": "exponential",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the y-intercept of y = 2^x - 3",
+      "answer": -2,
+      "tolerance": 0.01,
+      "hints": ["Y-intercept occurs when x = 0", "Calculate 2⁰ - 3"],
+      "explanation": "At y-intercept, x = 0:\ny = 2⁰ - 3\ny = 1 - 3\ny = -2",
+      "common_mistakes": [
+        {"mistake": "Thinking 2⁰ = 0", "explanation": "Any number to the power 0 is 1, so 2⁰ = 1"}
+      ],
+      "nsc_reference": "Exponential graphs"
+    },
+    {
+      "id": "FUN007",
+      "subtopic_id": "exponential",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find the horizontal asymptote of y = 3(2)^(x-1) - 5",
+      "answer": -5,
+      "tolerance": 0.01,
+      "hints": ["For y = ab^(x-p) + q, asymptote is y = q", "As x → -∞, the exponential term → 0"],
+      "explanation": "y = 3(2)^(x-1) - 5\n\nAs x → -∞, 2^(x-1) → 0\nSo y → 3(0) - 5 = -5\n\nHorizontal asymptote: y = -5",
+      "common_mistakes": [
+        {"mistake": "Forgetting the asymptote shift", "explanation": "The -5 shifts the asymptote from y=0 to y=-5"}
+      ],
+      "nsc_reference": "Exponential asymptotes"
+    },
+    {
+      "id": "FUN008",
+      "subtopic_id": "inverse",
+      "question_type": "expression",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find the inverse of f(x) = 2x + 6. Express as f⁻¹(x) = ...",
+      "answer": "(x-6)/2",
+      "hints": ["Swap x and y, then solve for y", "Or use: if f(x) = mx + c, then f⁻¹(x) = (x-c)/m"],
+      "explanation": "f(x) = 2x + 6\nLet y = 2x + 6\n\nSwap x and y:\nx = 2y + 6\n\nSolve for y:\nx - 6 = 2y\ny = (x - 6)/2\n\nf⁻¹(x) = (x - 6)/2 or f⁻¹(x) = x/2 - 3",
+      "common_mistakes": [
+        {"mistake": "Not swapping x and y", "explanation": "For inverse, interchange the roles of x and y"},
+        {"mistake": "Solving incorrectly", "explanation": "Subtract 6 first, then divide by 2"}
+      ],
+      "nsc_reference": "Inverse functions"
+    },
+    {
+      "id": "FUN009",
+      "subtopic_id": "inverse",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "If f(x) = x² (x ≥ 0), find f⁻¹(9).",
+      "answer": 3,
+      "tolerance": 0.01,
+      "hints": ["f⁻¹(x) = √x for x ≥ 0", "f⁻¹(9) = √9"],
+      "explanation": "f(x) = x² (x ≥ 0)\nf⁻¹(x) = √x (taking positive root since x ≥ 0)\n\nf⁻¹(9) = √9 = 3",
+      "common_mistakes": [
+        {"mistake": "Including negative root", "explanation": "Restriction x ≥ 0 means we only use positive root"},
+        {"mistake": "Confusing f(9) with f⁻¹(9)", "explanation": "f(9) = 81, but f⁻¹(9) = 3"}
+      ],
+      "nsc_reference": "Inverse of parabola"
+    },
+    {
+      "id": "FUN010",
+      "subtopic_id": "logarithmic",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find the x-intercept of y = log₂(x) - 3",
+      "answer": 8,
+      "tolerance": 0.01,
+      "hints": ["At x-intercept, y = 0", "Solve log₂(x) = 3"],
+      "explanation": "At x-intercept, y = 0:\n0 = log₂(x) - 3\nlog₂(x) = 3\nx = 2³\nx = 8",
+      "common_mistakes": [
+        {"mistake": "Confusing log and exponential", "explanation": "log₂(x) = 3 means 2³ = x"}
+      ],
+      "nsc_reference": "Logarithmic functions"
+    },
+    {
+      "id": "FUN011",
+      "subtopic_id": "parabola",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "Find the maximum value of y = -x² + 6x - 5",
+      "answer": 4,
+      "tolerance": 0.01,
+      "hints": ["This is a 'sad' parabola (a < 0) so it has a maximum", "Find the turning point"],
+      "explanation": "Method 1: x = -b/(2a) = -6/(2×-1) = 3\ny = -(3)² + 6(3) - 5 = -9 + 18 - 5 = 4\n\nMethod 2: Complete the square\ny = -(x² - 6x) - 5\ny = -(x² - 6x + 9 - 9) - 5\ny = -(x - 3)² + 9 - 5\ny = -(x - 3)² + 4\n\nMaximum value = 4 (when x = 3)",
+      "common_mistakes": [
+        {"mistake": "Finding minimum instead", "explanation": "a < 0 means maximum, a > 0 means minimum"},
+        {"mistake": "Error completing the square", "explanation": "When factoring out -, signs change inside"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q5"
+    },
+    {
+      "id": "FUN012",
+      "subtopic_id": "logarithmic",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 2,
+      "question_text": "The graph of y = log₃(x) is reflected in the x-axis. Find the y-coordinate when x = 9 on the reflected graph.",
+      "answer": -2,
+      "tolerance": 0.01,
+      "hints": ["Reflection in x-axis: y → -y", "New equation is y = -log₃(x)"],
+      "explanation": "Reflection in x-axis gives y = -log₃(x)\n\nWhen x = 9:\ny = -log₃(9)\ny = -log₃(3²)\ny = -2",
+      "common_mistakes": [
+        {"mistake": "Forgetting to negate", "explanation": "Reflection in x-axis negates all y-values"}
+      ],
+      "nsc_reference": "Transformations"
+    }
+  ]
+}

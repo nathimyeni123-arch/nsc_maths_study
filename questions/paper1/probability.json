@@ -1,0 +1,198 @@
+{
+  "topic_id": "probability",
+  "topic_name": "Probability",
+  "questions": [
+    {
+      "id": "PRO001",
+      "subtopic_id": "counting",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "A PIN consists of 4 digits. How many different PINs are possible if digits can be repeated?",
+      "answer": 10000,
+      "tolerance": 0.01,
+      "hints": ["Each digit has 10 choices (0-9)", "Use multiplication principle"],
+      "explanation": "Each of the 4 positions can be any digit 0-9 (10 choices each).\nTotal = 10 × 10 × 10 × 10 = 10⁴ = 10000",
+      "common_mistakes": [
+        {"mistake": "Forgetting repetition is allowed", "explanation": "With repetition: 10×10×10×10, without: 10×9×8×7"}
+      ],
+      "nsc_reference": "Counting principles"
+    },
+    {
+      "id": "PRO002",
+      "subtopic_id": "counting",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "How many 3-letter codes can be made from the word MATHS if no letter is repeated?",
+      "answer": 60,
+      "tolerance": 0.01,
+      "hints": ["MATHS has 5 different letters", "Without repetition: n × (n-1) × (n-2)"],
+      "explanation": "5 letters available, choose 3 without repetition:\nFirst position: 5 choices\nSecond position: 4 choices\nThird position: 3 choices\n\nTotal = 5 × 4 × 3 = 60",
+      "common_mistakes": [
+        {"mistake": "Using combinations instead of permutations", "explanation": "Order matters in codes, so use permutations"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q12"
+    },
+    {
+      "id": "PRO003",
+      "subtopic_id": "permutations",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "In how many ways can 5 people stand in a row?",
+      "answer": 120,
+      "tolerance": 0.01,
+      "hints": ["This is 5!", "5! = 5 × 4 × 3 × 2 × 1"],
+      "explanation": "Arranging n items in a row: n!\n5! = 5 × 4 × 3 × 2 × 1 = 120",
+      "common_mistakes": [
+        {"mistake": "Forgetting factorial means multiply all numbers down to 1", "explanation": "5! = 5×4×3×2×1, not just 5×4"}
+      ],
+      "nsc_reference": "Permutations"
+    },
+    {
+      "id": "PRO004",
+      "subtopic_id": "permutations",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "In how many ways can the letters of BOOK be arranged?",
+      "answer": 12,
+      "tolerance": 0.01,
+      "hints": ["There are repeated letters", "Use n!/r! where r is the number of repeated letters"],
+      "explanation": "BOOK has 4 letters with O repeated twice.\n\nArrangements = 4!/2! = 24/2 = 12",
+      "common_mistakes": [
+        {"mistake": "Using 4! without adjustment", "explanation": "Must divide by 2! because there are 2 identical O's"}
+      ],
+      "nsc_reference": "Permutations with repetition"
+    },
+    {
+      "id": "PRO005",
+      "subtopic_id": "permutations",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "In how many ways can the letters of SUCCESS be arranged?",
+      "answer": 420,
+      "tolerance": 0.01,
+      "hints": ["S appears 3 times, C appears 2 times", "Use 7!/(3!×2!)"],
+      "explanation": "SUCCESS: 7 letters\nS appears 3 times\nC appears 2 times\nU, E appear once each\n\nArrangements = 7!/(3!×2!)\n= 5040/(6×2)\n= 5040/12\n= 420",
+      "common_mistakes": [
+        {"mistake": "Forgetting one set of repeated letters", "explanation": "Both S (3 times) and C (2 times) are repeated"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q12"
+    },
+    {
+      "id": "PRO006",
+      "subtopic_id": "combinations",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "A committee of 3 people is chosen from 7 candidates. How many different committees are possible?",
+      "answer": 35,
+      "tolerance": 0.01,
+      "hints": ["Order doesn't matter - use combinations", "C(7,3) = 7!/(3!×4!)"],
+      "explanation": "Choosing 3 from 7 (order doesn't matter):\n\nC(7,3) = 7!/(3!×4!)\n= (7×6×5)/(3×2×1)\n= 210/6\n= 35",
+      "common_mistakes": [
+        {"mistake": "Using permutations instead of combinations", "explanation": "Committee members aren't ordered, so use combinations"}
+      ],
+      "nsc_reference": "Combinations"
+    },
+    {
+      "id": "PRO007",
+      "subtopic_id": "combinations",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "From a group of 4 boys and 5 girls, a team of 3 is chosen. In how many ways can the team have exactly 2 girls?",
+      "answer": 40,
+      "tolerance": 0.01,
+      "hints": ["Need 2 girls AND 1 boy", "Use C(5,2) × C(4,1)"],
+      "explanation": "2 girls from 5: C(5,2) = 10\n1 boy from 4: C(4,1) = 4\n\nTotal = 10 × 4 = 40",
+      "common_mistakes": [
+        {"mistake": "Adding instead of multiplying", "explanation": "Both conditions must be met, so multiply"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q12"
+    },
+    {
+      "id": "PRO008",
+      "subtopic_id": "probability_rules",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "A die is rolled. What is the probability of getting a number greater than 4? Give as a decimal.",
+      "answer": 0.333,
+      "tolerance": 0.01,
+      "hints": ["Numbers greater than 4: 5, 6", "P = favourable outcomes / total outcomes"],
+      "explanation": "Numbers > 4: {5, 6} = 2 outcomes\nTotal outcomes: 6\n\nP(>4) = 2/6 = 1/3 ≈ 0.333",
+      "common_mistakes": [
+        {"mistake": "Including 4", "explanation": "'Greater than 4' doesn't include 4 itself"}
+      ],
+      "nsc_reference": "Basic probability"
+    },
+    {
+      "id": "PRO009",
+      "subtopic_id": "probability_rules",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Two dice are rolled. What is the probability that the sum is 7? Give as a fraction in decimal form.",
+      "answer": 0.167,
+      "tolerance": 0.01,
+      "hints": ["List combinations that give sum of 7", "Total outcomes = 6 × 6 = 36"],
+      "explanation": "Sums of 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes\nTotal outcomes = 36\n\nP(sum=7) = 6/36 = 1/6 ≈ 0.167",
+      "common_mistakes": [
+        {"mistake": "Only counting 3 pairs", "explanation": "(1,6) and (6,1) are different outcomes"}
+      ],
+      "nsc_reference": "Sample spaces"
+    },
+    {
+      "id": "PRO010",
+      "subtopic_id": "probability_rules",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "P(A) = 0.4, P(B) = 0.5, P(A and B) = 0.2. Find P(A or B).",
+      "answer": 0.7,
+      "tolerance": 0.01,
+      "hints": ["Use addition rule: P(A or B) = P(A) + P(B) - P(A and B)"],
+      "explanation": "P(A or B) = P(A) + P(B) - P(A and B)\n= 0.4 + 0.5 - 0.2\n= 0.7",
+      "common_mistakes": [
+        {"mistake": "Forgetting to subtract P(A and B)", "explanation": "Must subtract intersection to avoid counting it twice"}
+      ],
+      "nsc_reference": "Addition rule"
+    },
+    {
+      "id": "PRO011",
+      "subtopic_id": "probability_rules",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Events A and B are independent. P(A) = 0.3 and P(B) = 0.4. Find P(A and B).",
+      "answer": 0.12,
+      "tolerance": 0.01,
+      "hints": ["For independent events: P(A and B) = P(A) × P(B)"],
+      "explanation": "For independent events:\nP(A and B) = P(A) × P(B)\n= 0.3 × 0.4\n= 0.12",
+      "common_mistakes": [
+        {"mistake": "Adding probabilities", "explanation": "For 'AND' with independent events, multiply"}
+      ],
+      "nsc_reference": "Independent events"
+    },
+    {
+      "id": "PRO012",
+      "subtopic_id": "probability_rules",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "A bag has 3 red and 2 blue balls. Two balls are drawn without replacement. Find P(both red).",
+      "answer": 0.3,
+      "tolerance": 0.01,
+      "hints": ["Without replacement changes second probability", "P = (3/5) × (2/4)"],
+      "explanation": "P(first red) = 3/5\nP(second red | first red) = 2/4 (one red removed)\n\nP(both red) = 3/5 × 2/4 = 6/20 = 0.3",
+      "common_mistakes": [
+        {"mistake": "Using (3/5) × (3/5)", "explanation": "Without replacement: after first draw, 2 red and 4 total remain"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q13"
+    }
+  ]
+}

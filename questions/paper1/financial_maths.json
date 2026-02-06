@@ -1,0 +1,176 @@
+{
+  "topic_id": "financial_maths",
+  "topic_name": "Financial Mathematics",
+  "questions": [
+    {
+      "id": "FIN001",
+      "subtopic_id": "compound_interest",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Calculate the amount if R5000 is invested at 8% p.a. compound interest for 3 years.",
+      "answer": 6298.56,
+      "tolerance": 0.50,
+      "hints": ["Use A = P(1 + i)ⁿ", "P = 5000, i = 0.08, n = 3"],
+      "explanation": "A = P(1 + i)ⁿ\nA = 5000(1 + 0.08)³\nA = 5000(1.08)³\nA = 5000(1.259712)\nA = R6298.56",
+      "common_mistakes": [
+        {"mistake": "Using simple interest formula", "explanation": "Compound interest uses A = P(1+i)ⁿ, not A = P(1+in)"},
+        {"mistake": "Not converting percentage", "explanation": "8% = 0.08 as a decimal"}
+      ],
+      "nsc_reference": "Basic compound interest"
+    },
+    {
+      "id": "FIN002",
+      "subtopic_id": "compound_interest",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "R10000 is invested at 12% p.a. compounded monthly. Calculate the value after 2 years.",
+      "answer": 12697.35,
+      "tolerance": 0.50,
+      "hints": ["Monthly compounding: i = 0.12/12 and n = 2×12", "Use A = P(1 + i)ⁿ"],
+      "explanation": "Monthly compounding:\ni = 12%/12 = 1% = 0.01 per month\nn = 2 × 12 = 24 months\n\nA = P(1 + i)ⁿ\nA = 10000(1.01)²⁴\nA = 10000(1.26973)\nA = R12697.35",
+      "common_mistakes": [
+        {"mistake": "Not adjusting for monthly compounding", "explanation": "Divide rate by 12, multiply time by 12"},
+        {"mistake": "Using annual rate directly", "explanation": "Must use monthly rate: 12%/12 = 1% per month"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q6"
+    },
+    {
+      "id": "FIN003",
+      "subtopic_id": "compound_interest",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "How long will it take for an investment to double at 9% p.a. compound interest? Give your answer in years (rounded to 1 decimal place).",
+      "answer": 8.0,
+      "tolerance": 0.2,
+      "hints": ["If it doubles, A = 2P", "Use logarithms to solve for n"],
+      "explanation": "A = P(1 + i)ⁿ\n2P = P(1.09)ⁿ\n2 = (1.09)ⁿ\n\nTaking log of both sides:\nlog 2 = n × log 1.09\nn = log 2 / log 1.09\nn = 0.301 / 0.0374\nn ≈ 8.04 years ≈ 8.0 years",
+      "common_mistakes": [
+        {"mistake": "Not using logarithms", "explanation": "To solve for n in the exponent, use logs"},
+        {"mistake": "Using natural log incorrectly", "explanation": "n = ln2/ln1.09 works the same way"}
+      ],
+      "nsc_reference": "Doubling time"
+    },
+    {
+      "id": "FIN004",
+      "subtopic_id": "annuities",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "R500 is deposited at the end of each month into an account earning 6% p.a. compounded monthly. What is the value after 3 years?",
+      "answer": 19668.05,
+      "tolerance": 1.00,
+      "hints": ["This is a future value annuity", "Use F = x[(1+i)ⁿ - 1]/i", "i = 0.06/12, n = 36"],
+      "explanation": "Future Value Annuity (payments at end):\ni = 6%/12 = 0.5% = 0.005\nn = 3 × 12 = 36 months\nx = R500\n\nF = x[(1+i)ⁿ - 1]/i\nF = 500[(1.005)³⁶ - 1]/0.005\nF = 500[1.19668 - 1]/0.005\nF = 500[0.19668]/0.005\nF = 500 × 39.336\nF = R19668.05",
+      "common_mistakes": [
+        {"mistake": "Using present value formula", "explanation": "Future value for savings, present value for loans"},
+        {"mistake": "Wrong number of periods", "explanation": "3 years × 12 months = 36 periods"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q6"
+    },
+    {
+      "id": "FIN005",
+      "subtopic_id": "annuities",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "Calculate the monthly payment needed to accumulate R100000 in 5 years if interest is 9% p.a. compounded monthly.",
+      "answer": 1284.70,
+      "tolerance": 1.00,
+      "hints": ["Rearrange F = x[(1+i)ⁿ - 1]/i to solve for x", "i = 0.09/12, n = 60"],
+      "explanation": "Future Value Annuity, solve for x:\nF = R100000\ni = 9%/12 = 0.75% = 0.0075\nn = 5 × 12 = 60\n\nx = F × i / [(1+i)ⁿ - 1]\nx = 100000 × 0.0075 / [(1.0075)⁶⁰ - 1]\nx = 750 / [1.5657 - 1]\nx = 750 / 0.5657\nx = R1284.70",
+      "common_mistakes": [
+        {"mistake": "Dividing incorrectly", "explanation": "x = Fi/[(1+i)ⁿ - 1], the (1+i)ⁿ - 1 is in denominator"},
+        {"mistake": "Calculator error with (1.0075)⁶⁰", "explanation": "(1.0075)⁶⁰ ≈ 1.5657"}
+      ],
+      "nsc_reference": "2019 Paper 1 Q6"
+    },
+    {
+      "id": "FIN006",
+      "subtopic_id": "loans",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "A loan of R50000 is repaid over 4 years at 11% p.a. compounded monthly. Calculate the monthly repayment.",
+      "answer": 1293.57,
+      "tolerance": 1.00,
+      "hints": ["This is a present value annuity", "Use P = x[1 - (1+i)⁻ⁿ]/i", "Solve for x"],
+      "explanation": "Present Value Annuity:\nP = R50000\ni = 11%/12 = 0.9167% = 0.009167\nn = 4 × 12 = 48\n\nx = P × i / [1 - (1+i)⁻ⁿ]\nx = 50000 × 0.009167 / [1 - (1.009167)⁻⁴⁸]\nx = 458.33 / [1 - 0.6456]\nx = 458.33 / 0.3544\nx = R1293.57",
+      "common_mistakes": [
+        {"mistake": "Using future value formula", "explanation": "Loans use present value formula"},
+        {"mistake": "Negative exponent error", "explanation": "(1.009167)⁻⁴⁸ means 1/(1.009167)⁴⁸"}
+      ],
+      "nsc_reference": "Loan repayments"
+    },
+    {
+      "id": "FIN007",
+      "subtopic_id": "loans",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "A car loan of R200000 at 12% p.a. compounded monthly is repaid with monthly installments of R4500. How many full payments will be made?",
+      "answer": 58,
+      "tolerance": 0.5,
+      "hints": ["Use P = x[1 - (1+i)⁻ⁿ]/i", "Solve for n using logarithms"],
+      "explanation": "P = x[1 - (1+i)⁻ⁿ]/i\n200000 = 4500[1 - (1.01)⁻ⁿ]/0.01\n2000 = 4500[1 - (1.01)⁻ⁿ]\n0.4444 = 1 - (1.01)⁻ⁿ\n(1.01)⁻ⁿ = 0.5556\n-n × log(1.01) = log(0.5556)\nn = -log(0.5556)/log(1.01)\nn = 0.2553/0.00432\nn ≈ 59.1\n\n58 full payments (the last one will be partial)",
+      "common_mistakes": [
+        {"mistake": "Rounding up to 60", "explanation": "Question asks for full payments; 59.1 means 58 full + 1 partial"},
+        {"mistake": "Log calculation error", "explanation": "Be careful with negative logs and signs"}
+      ],
+      "nsc_reference": "2020 Paper 1 Q6"
+    },
+    {
+      "id": "FIN008",
+      "subtopic_id": "loans",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 5,
+      "question_text": "A home loan of R800000 at 10.5% p.a. compounded monthly is repaid over 20 years. Calculate the balance owing after 5 years of payments.",
+      "answer": 707621,
+      "tolerance": 100,
+      "hints": ["First calculate monthly payment", "Then find balance = PV of remaining payments"],
+      "explanation": "Step 1: Calculate monthly payment\ni = 10.5%/12 = 0.875% = 0.00875\nn = 20 × 12 = 240\nP = R800000\n\nx = Pi/[1-(1+i)⁻ⁿ]\nx = 800000 × 0.00875 / [1-(1.00875)⁻²⁴⁰]\nx = 7000 / 0.8756\nx = R7994.97\n\nStep 2: Balance after 5 years (180 payments remaining)\nBalance = x[1-(1+i)⁻¹⁸⁰]/i\nBalance = 7994.97[1-(1.00875)⁻¹⁸⁰]/0.00875\nBalance = 7994.97 × 88.524\nBalance ≈ R707621",
+      "common_mistakes": [
+        {"mistake": "Calculating wrong remaining period", "explanation": "After 5 years: 20-5 = 15 years = 180 months remaining"},
+        {"mistake": "Using original loan amount", "explanation": "Balance is PV of remaining payments, not original loan minus payments made"}
+      ],
+      "nsc_reference": "2021 Paper 1 Q6"
+    },
+    {
+      "id": "FIN009",
+      "subtopic_id": "sinking_funds",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "A company needs R500000 in 6 years for equipment replacement. How much must be deposited monthly at 8% p.a. compounded monthly?",
+      "answer": 5392.88,
+      "tolerance": 1.00,
+      "hints": ["This is a sinking fund (future value annuity)", "Solve F = x[(1+i)ⁿ-1]/i for x"],
+      "explanation": "Future Value Annuity (Sinking Fund):\nF = R500000\ni = 8%/12 = 0.6667% = 0.006667\nn = 6 × 12 = 72\n\nx = Fi/[(1+i)ⁿ - 1]\nx = 500000 × 0.006667 / [(1.006667)⁷² - 1]\nx = 3333.33 / [1.6183 - 1]\nx = 3333.33 / 0.6183\nx = R5392.88",
+      "common_mistakes": [
+        {"mistake": "Using present value formula", "explanation": "Sinking funds save for future, use future value"},
+        {"mistake": "Wrong interest rate conversion", "explanation": "8%/12 = 0.6667% per month"}
+      ],
+      "nsc_reference": "Sinking funds"
+    },
+    {
+      "id": "FIN010",
+      "subtopic_id": "compound_interest",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "A car depreciates at 15% p.a. on a reducing balance. If it is worth R180000 now, what will it be worth in 4 years?",
+      "answer": 93896.25,
+      "tolerance": 1.00,
+      "hints": ["Depreciation uses A = P(1-i)ⁿ", "i = 0.15, n = 4"],
+      "explanation": "Reducing balance depreciation:\nA = P(1 - i)ⁿ\nA = 180000(1 - 0.15)⁴\nA = 180000(0.85)⁴\nA = 180000(0.52200625)\nA = R93896.25",
+      "common_mistakes": [
+        {"mistake": "Using (1+i) instead of (1-i)", "explanation": "Depreciation decreases value, so subtract the rate"},
+        {"mistake": "Using straight-line depreciation", "explanation": "Reducing balance uses exponential decay, not linear"}
+      ],
+      "nsc_reference": "Depreciation"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "topic_id": "statistics",
+  "topic_name": "Statistics",
+  "questions": [
+    {
+      "id": "STA001",
+      "subtopic_id": "measures_central",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the mean of: 12, 15, 18, 21, 24",
+      "answer": 18,
+      "tolerance": 0.01,
+      "hints": ["Mean = sum of values / number of values"],
+      "explanation": "Mean = (12 + 15 + 18 + 21 + 24) / 5\n= 90 / 5\n= 18",
+      "common_mistakes": [
+        {"mistake": "Wrong count of values", "explanation": "There are 5 values, not 4"}
+      ],
+      "nsc_reference": "Basic statistics"
+    },
+    {
+      "id": "STA002",
+      "subtopic_id": "measures_central",
+      "question_type": "numeric",
+      "difficulty": 1,
+      "marks": 2,
+      "question_text": "Find the median of: 7, 2, 9, 4, 5, 8, 3",
+      "answer": 5,
+      "tolerance": 0.01,
+      "hints": ["First arrange in order", "Middle value for odd number of data points"],
+      "explanation": "Arranged: 2, 3, 4, 5, 7, 8, 9\nThere are 7 values (odd), so median is the middle (4th) value.\nMedian = 5",
+      "common_mistakes": [
+        {"mistake": "Not arranging in order first", "explanation": "Must sort data before finding median"}
+      ],
+      "nsc_reference": "Median"
+    },
+    {
+      "id": "STA003",
+      "subtopic_id": "measures_dispersion",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "Find the range of: 15, 23, 8, 31, 19, 27",
+      "answer": 23,
+      "tolerance": 0.01,
+      "hints": ["Range = maximum - minimum"],
+      "explanation": "Maximum = 31\nMinimum = 8\nRange = 31 - 8 = 23",
+      "common_mistakes": [
+        {"mistake": "Adding instead of subtracting", "explanation": "Range is the difference, not sum"}
+      ],
+      "nsc_reference": "Range"
+    },
+    {
+      "id": "STA004",
+      "subtopic_id": "measures_dispersion",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "Calculate the standard deviation of: 2, 4, 6, 8, 10. Round to 2 decimal places.",
+      "answer": 2.83,
+      "tolerance": 0.05,
+      "hints": ["Mean = 6", "Find variance first, then take square root"],
+      "explanation": "Mean = (2+4+6+8+10)/5 = 30/5 = 6\n\nDeviations from mean: -4, -2, 0, 2, 4\nSquared deviations: 16, 4, 0, 4, 16\nSum = 40\n\nVariance = 40/5 = 8\nStandard deviation = √8 ≈ 2.83",
+      "common_mistakes": [
+        {"mistake": "Forgetting to square root at end", "explanation": "Variance is σ², standard deviation is σ"},
+        {"mistake": "Using n-1 for sample SD", "explanation": "Population SD uses n, sample SD uses n-1"}
+      ],
+      "nsc_reference": "2020 Paper 2 Q1"
+    },
+    {
+      "id": "STA005",
+      "subtopic_id": "measures_dispersion",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "The interquartile range (IQR) of a data set is 12 and Q1 = 25. Find Q3.",
+      "answer": 37,
+      "tolerance": 0.01,
+      "hints": ["IQR = Q3 - Q1", "Rearrange to find Q3"],
+      "explanation": "IQR = Q3 - Q1\n12 = Q3 - 25\nQ3 = 25 + 12 = 37",
+      "common_mistakes": [
+        {"mistake": "Subtracting instead of adding", "explanation": "Q3 = Q1 + IQR"}
+      ],
+      "nsc_reference": "Quartiles"
+    },
+    {
+      "id": "STA006",
+      "subtopic_id": "ogives",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "An ogive shows the 40th percentile at x = 35. What percentage of data values are less than 35?",
+      "answer": 40,
+      "tolerance": 0.01,
+      "hints": ["Percentiles indicate the percentage below that value"],
+      "explanation": "The 40th percentile means 40% of values are below this point.\nSo 40% of data values are less than 35.",
+      "common_mistakes": [
+        {"mistake": "Saying 60%", "explanation": "40th percentile means 40% below, not 60%"}
+      ],
+      "nsc_reference": "Ogives and percentiles"
+    },
+    {
+      "id": "STA007",
+      "subtopic_id": "bivariate",
+      "question_type": "multiple_choice",
+      "difficulty": 2,
+      "marks": 2,
+      "question_text": "A scatter plot shows points clustered around a line sloping downward from left to right. The correlation is:",
+      "answer": "B",
+      "options": ["Positive", "Negative", "Zero", "Cannot determine"],
+      "hints": ["Downward slope indicates inverse relationship"],
+      "explanation": "A downward slope from left to right means as x increases, y decreases.\nThis is a negative correlation.",
+      "common_mistakes": [
+        {"mistake": "Confusing direction", "explanation": "Upward slope = positive, downward slope = negative"}
+      ],
+      "nsc_reference": "Correlation"
+    },
+    {
+      "id": "STA008",
+      "subtopic_id": "bivariate",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 4,
+      "question_text": "The regression line equation is ŷ = 2.5x + 3. Predict y when x = 4.",
+      "answer": 13,
+      "tolerance": 0.01,
+      "hints": ["Substitute x = 4 into the equation"],
+      "explanation": "ŷ = 2.5x + 3\nŷ = 2.5(4) + 3\nŷ = 10 + 3\nŷ = 13",
+      "common_mistakes": [
+        {"mistake": "Calculation error", "explanation": "2.5 × 4 = 10, then 10 + 3 = 13"}
+      ],
+      "nsc_reference": "Regression"
+    },
+    {
+      "id": "STA009",
+      "subtopic_id": "bivariate",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "Given Σx = 30, Σy = 50, Σxy = 340, Σx² = 220, n = 5. Find the gradient (b) of the regression line.",
+      "answer": 2,
+      "tolerance": 0.05,
+      "hints": ["b = (nΣxy - ΣxΣy)/(nΣx² - (Σx)²)"],
+      "explanation": "b = (nΣxy - ΣxΣy)/(nΣx² - (Σx)²)\nb = (5(340) - 30(50))/(5(220) - 30²)\nb = (1700 - 1500)/(1100 - 900)\nb = 200/100\nb = 2",
+      "common_mistakes": [
+        {"mistake": "Confusing (Σx)² with Σx²", "explanation": "(Σx)² = 30² = 900, not Σx² = 220"}
+      ],
+      "nsc_reference": "2021 Paper 2 Q1"
+    },
+    {
+      "id": "STA010",
+      "subtopic_id": "measures_central",
+      "question_type": "numeric",
+      "difficulty": 2,
+      "marks": 3,
+      "question_text": "A data set has 10 values with mean 15. If one value of 20 is added, find the new mean.",
+      "answer": 15.45,
+      "tolerance": 0.05,
+      "hints": ["Find total of original 10 values", "Add new value and divide by 11"],
+      "explanation": "Original sum = 10 × 15 = 150\nNew sum = 150 + 20 = 170\nNew mean = 170/11 ≈ 15.45",
+      "common_mistakes": [
+        {"mistake": "Just averaging 15 and 20", "explanation": "Need weighted approach based on counts"}
+      ],
+      "nsc_reference": "Mean calculations"
+    },
+    {
+      "id": "STA011",
+      "subtopic_id": "bivariate",
+      "question_type": "multiple_choice",
+      "difficulty": 2,
+      "marks": 2,
+      "question_text": "If r = -0.95, what can we say about the correlation?",
+      "answer": "C",
+      "options": ["Weak positive", "Weak negative", "Strong negative", "Strong positive"],
+      "hints": ["r close to -1 or 1 is strong", "Sign indicates direction"],
+      "explanation": "|r| = 0.95 is close to 1, so correlation is strong.\nNegative sign means negative correlation.\nTherefore: Strong negative correlation.",
+      "common_mistakes": [
+        {"mistake": "Thinking negative means weak", "explanation": "The sign shows direction, the magnitude shows strength"}
+      ],
+      "nsc_reference": "Correlation coefficient"
+    },
+    {
+      "id": "STA012",
+      "subtopic_id": "ogives",
+      "question_type": "numeric",
+      "difficulty": 3,
+      "marks": 4,
+      "question_text": "An ogive shows: (10, 0), (20, 5), (30, 15), (40, 35), (50, 50). Estimate the median.",
+      "answer": 37,
+      "tolerance": 2,
+      "hints": ["Median is at 50% = 25th value", "Read from the ogive where cumulative frequency is 25"],
+      "explanation": "Total frequency = 50\nMedian position = 50/2 = 25\n\nFrom ogive: at cumulative frequency 25, read across.\nBetween (30, 15) and (40, 35)\n\nUsing linear interpolation:\n25 is (25-15)/(35-15) = 10/20 = 0.5 of the way from 30 to 40\nMedian ≈ 30 + 0.5(10) = 35-37",
+      "common_mistakes": [
+        {"mistake": "Not interpolating", "explanation": "When value falls between points, interpolate"}
+      ],
+      "nsc_reference": "2019 Paper 2 Q1"
+    }
+  ]
+}
