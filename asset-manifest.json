@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/nsc_maths_study/static/js/main.81e7e92f.js",
+    "main.js": "/nsc_maths_study/static/js/main.8e0476a5.js",
     "index.html": "/nsc_maths_study/index.html",
-    "main.81e7e92f.js.map": "/nsc_maths_study/static/js/main.81e7e92f.js.map"
+    "main.8e0476a5.js.map": "/nsc_maths_study/static/js/main.8e0476a5.js.map"
   },
   "entrypoints": [
-    "static/js/main.81e7e92f.js"
+    "static/js/main.8e0476a5.js"
   ]
 }
