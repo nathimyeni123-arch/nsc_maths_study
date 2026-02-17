@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/nsc_maths_study/static/js/main.e40023fa.js",
+    "main.js": "/nsc_maths_study/static/js/main.10bf3e36.js",
     "index.html": "/nsc_maths_study/index.html",
-    "main.e40023fa.js.map": "/nsc_maths_study/static/js/main.e40023fa.js.map"
+    "main.10bf3e36.js.map": "/nsc_maths_study/static/js/main.10bf3e36.js.map"
   },
   "entrypoints": [
-    "static/js/main.e40023fa.js"
+    "static/js/main.10bf3e36.js"
   ]
 }
